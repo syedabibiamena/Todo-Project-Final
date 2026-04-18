@@ -6,7 +6,7 @@ const API = "http://localhost:5000/api/todo_task";
 function App() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
-  const [search, setSearch] = useState(""); // ✅ NEW
+  const [search, setSearch] = useState(""); 
 
   const loadTasks = async () => {
     const res = await axios.get(API);
@@ -35,7 +35,6 @@ function App() {
     loadTasks();
   };
 
-  // ✅ FILTER LOGIC
   const filteredTasks = tasks.filter((t) =>
     t.title.toLowerCase().includes(search.toLowerCase())
   );
@@ -44,7 +43,7 @@ function App() {
     <div style={{ width: "400px", margin: "auto" }}>
       <h2>Todo App</h2>
 
-      {/* Add Task */}
+      
       <input
         value={title}
         onChange={(e) => setTitle(e.target.value)}
@@ -54,7 +53,7 @@ function App() {
 
       <br /><br />
 
-      {/* ✅ SEARCH BAR */}
+      
       <input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
@@ -64,7 +63,7 @@ function App() {
 
       <br /><br />
 
-      {/* Task List */}
+      
       {filteredTasks.map((t) => (
         <div key={t._id}>
           <p
