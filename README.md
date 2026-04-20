@@ -12,7 +12,9 @@ The app allows users to manage tasks efficiently with real-time updates and sear
 
 ##Live Demo
 
- https://todo-project-final.onrender.com
+ Render link :https://todo-project-final.onrender.com
+
+ netlify link: https://stellar-trifle-e29e2f.netlify.app/
 ---
 
 ##  Features
