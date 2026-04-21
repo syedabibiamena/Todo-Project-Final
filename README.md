@@ -20,19 +20,19 @@ Live Demo
 *  Real-time search filtering
 * Simple and clean UI
 
-#  Backend
+Backend
 
 * RESTful API
 * MongoDB database integration
 * CRUD operations
 * Status update endpoint
 
-##  Technologies Used
+Technologies Used
 Frontend
 * React.js
 * Axios
   
-# Backend
+Backend
 * Node.js
 * Express.js
 * MongoDB Atlas
